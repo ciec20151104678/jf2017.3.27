@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "2"; ObjectID = "FyH-nZ-hfO"; */
+"FyH-nZ-hfO.normalTitle" = "2";
+
+/* Class = "UIButton"; normalTitle = "3"; ObjectID = "KDN-Lo-Vuq"; */
+"KDN-Lo-Vuq.normalTitle" = "3";
+
+/* Class = "UISegmentedControl"; j8m-d8-Bdy.segmentTitles[0] = "First"; ObjectID = "j8m-d8-Bdy"; */
+"j8m-d8-Bdy.segmentTitles[0]" = "First";
+
+/* Class = "UISegmentedControl"; j8m-d8-Bdy.segmentTitles[1] = "Second"; ObjectID = "j8m-d8-Bdy"; */
+"j8m-d8-Bdy.segmentTitles[1]" = "Second";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "pcW-1j-Vs7"; */
+"pcW-1j-Vs7.normalTitle" = "1";
