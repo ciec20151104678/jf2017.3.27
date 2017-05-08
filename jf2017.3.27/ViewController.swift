@@ -335,6 +335,93 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         }
     }
     
+    @IBOutlet var zhu1: UITextField!
+    @IBOutlet var zhu2: UITextField!
+    @IBOutlet var zhu3: UITextField!
+    @IBOutlet var zhu4: UITextField!
+    @IBOutlet var zhu5: UITextField!
+    @IBOutlet var ke1: UITextField!
+    @IBOutlet var ke2: UITextField!
+    @IBOutlet var ke3: UITextField!
+    @IBOutlet var ke4: UITextField!
+    @IBOutlet var ke5: UITextField!
+    
+    @IBAction func star(_ sender: Any) {
+            let alertController = UIAlertController(title: "系统登录", message: "请输入选手信息", preferredStyle: UIAlertControllerStyle.alert)
+            
+            alertController.addTextField { (textField:UITextField) in
+                textField.placeholder = "主队一号"
+            }
+            alertController.addTextField { (textField:UITextField) in
+                textField.placeholder = "主队二号"
+            }
+            alertController.addTextField { (textField:UITextField) in
+                textField.placeholder = "主队三号"
+            }
+            alertController.addTextField { (textField:UITextField) in
+                textField.placeholder = "主队四号"
+            }
+            alertController.addTextField { (textField:UITextField) in
+                textField.placeholder = "主队五号"
+            }
+            alertController.addTextField { (textField:UITextField) in
+                textField.placeholder = "客队一号"
+        }
+            alertController.addTextField { (textField:UITextField) in
+                textField.placeholder = "客队二号"
+        }
+            alertController.addTextField { (textField:UITextField) in
+                textField.placeholder = "客队三号"
+        }
+            alertController.addTextField { (textField:UITextField) in
+                textField.placeholder = "客队四号"
+        }
+            alertController.addTextField { (textField:UITextField) in
+                textField.placeholder = "客队五号"
+        }
+        
+            let cancelAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.cancel, handler: nil)
+            let okAction = UIAlertAction(title: "好的", style: UIAlertActionStyle.default) { (UIAlertAction) in
+                let nameA = alertController.textFields![0]
+                let nameB = alertController.textFields![1]
+                let nameC = alertController.textFields![2]
+                let nameD = alertController.textFields![3]
+                let nameE = alertController.textFields![4]
+                let nameF = alertController.textFields![5]
+                let nameG = alertController.textFields![6]
+                let nameH = alertController.textFields![7]
+                let nameI = alertController.textFields![8]
+                let nameJ = alertController.textFields![9]
+                
+                self.zhu1.textAlignment = .center
+                self.zhu2.textAlignment = .center
+                self.zhu3.textAlignment = .center
+                self.zhu4.textAlignment = .center
+                self.zhu5.textAlignment = .center
+                self.ke1.textAlignment = .center
+                self.ke2.textAlignment = .center
+                self.ke3.textAlignment = .center
+                self.ke4.textAlignment = .center
+                self.ke5.textAlignment = .center
+                self.zhu1.text = nameA.text
+                self.zhu2.text = nameB.text
+                self.zhu3.text = nameC.text
+                self.zhu4.text = nameD.text
+                self.zhu5.text = nameE.text
+                self.ke1.text = nameF.text
+                self.ke2.text = nameG.text
+                self.ke3.text = nameH.text
+                self.ke4.text = nameI.text
+                self.ke5.text = nameJ.text
+        
+        }
+            alertController.addAction(cancelAction)
+            alertController.addAction(okAction)
+            
+            
+            // 弹出
+            self.present(alertController, animated: true, completion: nil)
+        }
     
     
     
