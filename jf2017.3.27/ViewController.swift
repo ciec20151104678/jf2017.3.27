@@ -423,9 +423,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             self.present(alertController, animated: true, completion: nil)
         }
     
-    
-    
-    
     @IBAction func end(_ sender: Any) {
         temp1=0
         temp2=0
@@ -436,11 +433,31 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         z3=0
         z4=0
         z5=0
+        k1=0
+        k2=0
+        k3=0
+        k4=0
+        k5=0
+        zhu1.text=""
+        zhu2.text=""
+        zhu3.text=""
+        zhu4.text=""
+        zhu5.text=""
+        ke1.text=""
+        ke2.text=""
+        ke3.text=""
+        ke4.text=""
+        ke5.text=""
         h1.text = ""
         h2.text = ""
         h3.text = ""
         h4.text = ""
         h5.text = ""
+        x1.text = ""
+        x2.text = ""
+        x3.text = ""
+        x4.text = ""
+        x5.text = ""
         zteam2.text = ""
         zteam1.text = ""
         team1.text = ""
