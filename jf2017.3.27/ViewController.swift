@@ -69,39 +69,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         temp3 = temp3 - 1
         zteam2.text = "\(temp3)"
     }
-    @IBAction func team1jia(_ sender: Any) {
-        temp3 = temp3 + 1
-        zteam2.text = "\(temp3)"
-        if(temp3==5){
-            let alertController = UIAlertController(title: "系统提示",
-                                                    message: "主队五犯", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "好的", style: .default, handler: {
-                action in
-                print("点击了确定")
-            })
-            alertController.addAction(okAction)
-            self.present(alertController, animated: true, completion: nil)
-        }
-    }
-    
 
     @IBAction func team2jian(_ sender: Any) {
         temp4 = temp4 - 1
         zteam1.text = "\(temp4)"
-    }
-    @IBAction func team2jia(_ sender: Any) {
-        temp4 = temp4 + 1
-        zteam1.text = "\(temp4)"
-        if(temp4==5){
-            let alertController = UIAlertController(title: "系统提示",
-                                                    message: "主队五犯", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "好的", style: .default, handler: {
-                action in
-                print("点击了确定")
-            })
-            alertController.addAction(okAction)
-            self.present(alertController, animated: true, completion: nil)
-        }
     }
     @IBAction func photo1(_ sender: Any) {
         if dlg==0{
@@ -166,8 +137,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     @IBOutlet var h5: UITextField!
 
     @IBAction func zhu1(_ sender: Any) {
-        z1 = z1 + 1
+         z1 = z1 + 1
         h1.text = "\(z1)"
+        temp3 = temp3 + 1
+        zteam2.text = "\(temp3)"
         if(z1==5){
             let alertController = UIAlertController(title: "系统提示",
                                                     message: "罚下1号", preferredStyle: .alert)
@@ -180,10 +153,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             z1=0
             h1.text = "0"
         }
+        if(temp3==5){
+            let alertController = UIAlertController(title: "系统提示",
+                                                    message: "主队五犯", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: {
+                action in
+                print("点击了确定")
+            })
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+
     }
     @IBAction func zhu2(_ sender: Any) {
         z2 = z2 + 1
         h2.text = "\(z2)"
+        temp3 = temp3 + 1
+        zteam2.text = "\(temp3)"
         if(z2==5){
             let alertController = UIAlertController(title: "系统提示",
                                                     message: "罚下2号", preferredStyle: .alert)
@@ -196,10 +182,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             z2=0
             h2.text = "0"
         }
+        if(temp3==5){
+            let alertController = UIAlertController(title: "系统提示",
+                                                    message: "主队五犯", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: {
+                action in
+                print("点击了确定")
+            })
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+
     }
     @IBAction func zhu3(_ sender: Any) {
         z3 = z3 + 1
         h3.text = "\(z3)"
+        temp3 = temp3 + 1
+        zteam2.text = "\(temp3)"
         if(z3==5){
             let alertController = UIAlertController(title: "系统提示",
                                                     message: "罚下3号", preferredStyle: .alert)
@@ -212,11 +211,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             z3=0
             h3.text = "0"
         }
+        if(temp3==5){
+            let alertController = UIAlertController(title: "系统提示",
+                                                    message: "主队五犯", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: {
+                action in
+                print("点击了确定")
+            })
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+
     }
 
     @IBAction func zhu4(_ sender: Any) {
         z4 = z4 + 1
         h4.text = "\(z4)"
+        temp3 = temp3 + 1
+        zteam2.text = "\(temp3)"
         if(z4==5){
             let alertController = UIAlertController(title: "系统提示",
                                                     message: "罚下4号", preferredStyle: .alert)
@@ -229,10 +241,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             z4=0
             h4.text = "0"
         }
+        if(temp3==5){
+            let alertController = UIAlertController(title: "系统提示",
+                                                    message: "主队五犯", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: {
+                action in
+                print("点击了确定")
+            })
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     @IBAction func zhu5(_ sender: Any) {
         z5 = z5 + 1
         h5.text = "\(z5)"
+        temp3 = temp3 + 1
+        zteam2.text = "\(temp3)"
         if(z5==5){
             let alertController = UIAlertController(title: "系统提示",
                                                     message: "罚下5号", preferredStyle: .alert)
@@ -245,6 +269,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             z5=0
             h5.text = "0"
         }
+        if(temp3==5){
+            let alertController = UIAlertController(title: "系统提示",
+                                                    message: "主队五犯", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: {
+                action in
+                print("点击了确定")
+            })
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     
     @IBOutlet var x1: UITextField!
@@ -256,6 +290,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     @IBAction func ke1(_ sender: Any) {
         k1 = k1 + 1
         x1.text = "\(k1)"
+        temp4 = temp4 + 1
+        zteam1.text = "\(temp4)"
+
         if(k1==5){
             let alertController = UIAlertController(title: "系统提示",
                                                     message: "罚下1号", preferredStyle: .alert)
@@ -268,11 +305,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             k1=0
             x1.text = "0"
         }
+        if(temp4==5){
+            let alertController = UIAlertController(title: "系统提示",
+                                                    message: "主队五犯", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: {
+                action in
+                print("点击了确定")
+            })
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+
         
     }
     @IBAction func ke2(_ sender: Any) {
         k2 = k2 + 1
         x2.text = "\(k2)"
+        temp4 = temp4 + 1
+        zteam1.text = "\(temp4)"
         if(k2==5){
             let alertController = UIAlertController(title: "系统提示",
                                                     message: "罚下2号", preferredStyle: .alert)
@@ -285,10 +335,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             k2=0
             x2.text = "0"
         }
+        if(temp4==5){
+            let alertController = UIAlertController(title: "系统提示",
+                                                    message: "主队五犯", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: {
+                action in
+                print("点击了确定")
+            })
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+
     }
     @IBAction func ke3(_ sender: Any) {
         k3 = k3 + 1
         x3.text = "\(k3)"
+        temp4 = temp4 + 1
+        zteam1.text = "\(temp4)"
         if(k3==5){
             let alertController = UIAlertController(title: "系统提示",
                                                     message: "罚下3号", preferredStyle: .alert)
@@ -301,10 +364,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             k3=0
             x3.text = "0"
         }
+        if(temp4==5){
+            let alertController = UIAlertController(title: "系统提示",
+                                                    message: "主队五犯", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: {
+                action in
+                print("点击了确定")
+            })
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+
     }
     @IBAction func ke4(_ sender: Any) {
         k4 = k4 + 1
         x4.text = "\(k4)"
+        temp4 = temp4 + 1
+        zteam1.text = "\(temp4)"
         if(k4==5){
             let alertController = UIAlertController(title: "系统提示",
                                                     message: "罚下4号", preferredStyle: .alert)
@@ -317,10 +393,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             k4=0
             x4.text = "0"
         }
+        if(temp4==5){
+            let alertController = UIAlertController(title: "系统提示",
+                                                    message: "主队五犯", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: {
+                action in
+                print("点击了确定")
+            })
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+
     }
     @IBAction func ke5(_ sender: Any) {
         k5 = k5 + 1
         x5.text = "\(k5)"
+        temp4 = temp4 + 1
+        zteam1.text = "\(temp4)"
         if(k5==5){
             let alertController = UIAlertController(title: "系统提示",
                                                     message: "罚下5号", preferredStyle: .alert)
@@ -333,6 +422,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
             k5=0
             x5.text = "0"
         }
+        if(temp4==5){
+            let alertController = UIAlertController(title: "系统提示",
+                                                    message: "主队五犯", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "好的", style: .default, handler: {
+                action in
+                print("点击了确定")
+            })
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+
     }
     
     @IBOutlet var zhu1: UITextField!
@@ -466,7 +566,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
    
     
 
-
+    
+    
     
     
     override func didReceiveMemoryWarning() {
