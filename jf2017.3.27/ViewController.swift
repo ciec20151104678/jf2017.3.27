@@ -22,6 +22,13 @@ var k3 :Int = 0
 var k4 :Int = 0
 var k5 :Int = 0
 
+var Counter = 0.0
+var timer = Timer()
+var isPlaying = false
+var a = 0.0
+var b = 4
+
+
 class ViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     var dlg=0
     var flagA=0
@@ -563,8 +570,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         team1.text = ""
         team2.text = ""
     }
-   
+    @IBOutlet var labe: UILabel!
     
+    @IBAction func start(_ sender: Any) {
+        
+    }
+    @IBAction func isplaying(_ sender: Any) {
+    }
 
     
     
