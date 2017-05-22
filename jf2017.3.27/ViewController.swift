@@ -33,6 +33,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     var dlg=0
     var flagA=0
     var flagB=0
+    var timer:Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -571,12 +572,44 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         team2.text = ""
     }
     @IBOutlet var labe: UILabel!
+    func timerIntervalx() {
+        if a==0{
+            b-=1
+            a=59
+        }
+        else  {
+            a=a-1;
+        }
     
+        labe?.text = "\(b):\(a)"
+    }
+
     @IBAction func start(_ sender: Any) {
-        
+        if !(timer != nil) {
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerIntervalx), userInfo: nil, repeats: true)
+        }
     }
+
     @IBAction func isplaying(_ sender: Any) {
+        if isEqual(start) {
+            
+        }
+        else
+        {
+            timePause()
+        }
     }
+    func timePause() {
+        timer?.invalidate()
+        timer = nil
+    }
+    @IBAction func clear(_ sender: Any) {
+         a = 0.0
+         b = 4
+    }
+
+
+
 
     
     
